@@ -31,7 +31,10 @@ LegacyX Take-Home Technical Interview Challenge
   
   ### GroupCalculation
   `
+  internal partial class GroupCalculation
+  {
     public int GroupCalculationID {get;set;}
   
     public virtual ICollection<SingleCalculation> SingleCalculations {get;set;}
+  }
   `
