@@ -1,2 +1,2 @@
 # LegacyXSolution
-LEgacyX Take-Home TEchnical Interview Challenge
+LegacyX Take-Home TEchnical Interview Challenge
