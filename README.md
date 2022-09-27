@@ -3,7 +3,7 @@
 LegacyX Take-Home Technical Interview Challenge
 
 ## Implementaion Plan
-  > My unerstanding of the problem has the user entering 2 numbers at a time to see the result. The page opens with a title in the top middle, underneath the title in the following order there are 4 boxes, 1. Input Box, 2. Dropdown, 3. Input Box, 4. Button. Underneathe the boxes, there will be 3 Buttons, Show History, Save History and Clear History. These buttons will interact with the table CalculationHistory, which when visible will be below the buttons.
+  > My understanding of the problem has the user entering 2 numbers at a time to see the result. The page opens with a title in the top middle, underneath the title in the following order there are 4 boxes, 1. Input Box, 2. Dropdown, 3. Input Box, 4. Button. Underneathe the boxes, there will be 3 Buttons, Show History, Save History and Clear History. These buttons will interact with the table CalculationHistory, which when visible will be below the buttons.
   - **ShowHistory_Click**
     - Used to show or hide the history of the current `CalculationHistory`
     - The ShowHistory button will toggle visible on the History `div`
