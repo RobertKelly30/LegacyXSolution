@@ -14,7 +14,7 @@ namespace LegacyXSystem.Entities
 
         public int Symbol { get; set; }
 
-        public int Second Value {get;set;}
+        public int SecondValue {get;set;}
 
         public virtual CalculationHistory CalculationHistory { get; set; }
     }

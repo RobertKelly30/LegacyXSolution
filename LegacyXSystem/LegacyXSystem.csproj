@@ -51,23 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\Class1.cs" />
     <Compile Include="DAL\legacyXContext.cs" />
     <Compile Include="Entities\CalculationHistory.cs" />
     <Compile Include="Entities\SingleCalculation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LegacyXSystem.Data\LegacyXSystem.Data.csproj">
-      <Project>{76c10405-128a-487c-8268-4a361d926738}</Project>
-      <Name>LegacyXSystem.Data</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="BLL\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
