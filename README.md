@@ -3,7 +3,7 @@
 LegacyX Take-Home Technical Interview Challenge
 
 ## Implementaion Plan
-  > The page opens with a title in the top middle, underneath the title in the following order there are 4 boxes, 1. Input Box, 2. Dropdown, 3. Input Box, 4. Button.
+  > My unerstanding of the problem has the user entering 2 numbers at a time to see the result. The page opens with a title in the top middle, underneath the title in the following order there are 4 boxes, 1. Input Box, 2. Dropdown, 3. Input Box, 4. Button. Underneathe the boxes, there will be 3 Buttons, Show History, Save History and Clear History. These buttons will interact with the table CalculationHistory, which when visible will be below the buttons.
   - **ShowHistory_Click**
     - Used to show or hide the history of the current `CalculationHistory`
     - The ShowHistory button will toggle visible on the History `div`
@@ -22,14 +22,58 @@ LegacyX Take-Home Technical Interview Challenge
 
 ## Functions
   ### showCalculationHistory
+  ```csharp
+    if(showHistory = clicked)
+      history.visible = !history.visible;
+    }
+  ```
   
   ### clearCalculationHistory
+  ```csharp
+    if(clearHistory = clicked)
+    {   
+      // modal popup with question "Are you sure you want to delete current History?"
+      if(modalButton = confirm)
+      {
+        create new CalculationHistory;
+        currentCalculationHistory = newCalculationHistory;
+      } else 
+      {
+        close modal
+      }
+    }
+  ```
   
   ### saveCalculationHistory
-  
-  ### editCalculationHistory
+  ```csharp
+    if(saveHistory = clicked)
+    {
+      // query for download path;
+      // create text file with CalcutionHistory printed in order
+      // modal popup with question "Would you like to start new Calculation Group?"
+      //    if yes
+      //      call clearCalculationHistory()
+      //    if no
+      //      close modal
+    }
+  ```
   
   ### calculate
+  ```csharp
+    if(validationErrors = null)
+    {
+      create new SingleCalulation;
+      SingleCalculation.values = current.values;
+      CalculationHistory.add(SingleCalculation);
+
+      // return inputBox1 to default;
+      // return inputBox2 to default;
+      // do not change symbol dropdown
+    } else
+    {
+      display errors
+    }
+  ```
   
 ## Entities
   ### SingleCalculation
