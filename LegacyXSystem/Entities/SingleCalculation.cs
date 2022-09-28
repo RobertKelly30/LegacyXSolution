@@ -12,7 +12,7 @@ namespace LegacyXSystem.Entities
 
         public int FirstValue { get; set; }
 
-        public int Symbol { get; set; }
+        public string Symbol { get; set; }
 
         public int SecondValue {get;set;}
 
