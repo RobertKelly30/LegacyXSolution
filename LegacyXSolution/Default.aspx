@@ -25,9 +25,7 @@
     </div>
 
     <div class="row">
-        <asp:GridView ID="History" runat="server" Visible="false">
-
-        </asp:GridView>
+        <asp:ListView ID="CalculationHistory" runat="server"></asp:ListView>
         <asp:ObjectDataSource ID="HistoryODS" runat="server"></asp:ObjectDataSource>
     </div>
 

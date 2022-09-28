@@ -48,8 +48,9 @@ namespace LegacyXSolution
                     // modal popup with question "Are you sure you want to delete current History?"
                     if (modalButton = confirm)
                     {
-                        create new CalculationHistory;
-                        currentCalculationHistory = newCalculationHistory;
+                        call BLL Controller class
+
+                        call DeleteSingleCalculations
                     }
                     else
                     {
@@ -67,9 +68,12 @@ namespace LegacyXSolution
             /*
                 if(validationErrors = null)
                 {
+                    call BLL Controller class
+                    
                     create new SingleCalulation;
-                    SingleCalculation.values = current.values;
-                    CalculationHistory.add(SingleCalculation);
+                    SingleCalculation.values = current.values;          
+
+                    Use controller to call AddSingleCalculation("new SingleCalculation")
 
                     // return inputBox1 to default;
                     // return inputBox2 to default;
